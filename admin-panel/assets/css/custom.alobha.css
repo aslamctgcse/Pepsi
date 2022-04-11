@@ -1,0 +1,102 @@
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #d2d2d2;
+    border-radius: inherit;
+}
+.select2-container--default .select2-selection--multiple{
+	border: none;
+	border-bottom: 1px solid #d2d2d2;
+}
+.page-heading{
+    font-weight: bold;padding-left: 10px;font-size: 1.4625rem;
+}
+
+.card .card-footer .stats .material-icons {
+	position: relative;
+    top: 4px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #778be0 !important;
+}
+
+.card .card-footer .stats a{
+    top: 4px;
+    font-size: 15px;
+    margin-top: 4px;
+    margin-left: 3px;
+    font-weight: 400;
+    color: #334cb8 !important;
+}
+.card .card-header-blue .card-icon, .card .card-header-blue .card-text, .card .card-header-blue:not(.card-header-icon):not(.card-header-text), .card.bg-blue, .card.card-rotate.bg-blue .front, .card.card-rotate.bg-blue .back {
+    background: linear-gradient(90deg, #0061c7, #15bbcf);
+}
+.card .card-header-blue .card-icon, .card .card-header-blue:not(.card-header-icon):not(.card-header-text), .card .card-header-blue .card-text {
+    box-shadow: 0 4px 20px 0px rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(4 115 201 / 25%);
+}
+.card .card-header-pink .card-icon, .card .card-header-pink .card-text, .card .card-header-pink:not(.card-header-icon):not(.card-header-text), .card.bg-pink, .card.card-rotate.bg-pink .front, .card.card-rotate.bg-pink .back {
+    background: linear-gradient(90deg, #a916a4, #dc30d7);
+}
+.card .card-header-pink .card-icon, .card .card-header-pink:not(.card-header-icon):not(.card-header-text), .card .card-header-pink .card-text {
+    box-shadow: 0 4px 20px 0px rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(228 46 222 / 25%);
+}
+.card-header.card-header-primary .card-title{
+	margin-bottom: 0;
+    font-weight: 400;
+    padding-left: 16px;
+}
+.card-header.card-header-primary b{
+    padding-left: 16px;
+}
+
+.sidebar .nav.sub-menu {
+    margin-top: 5px;
+    display: block;
+    margin-left: 45px;
+}
+.card-c-blue{
+    background: linear-gradient(90deg, #0061c7, #15bbcf);
+}
+.card-c-brown{
+    background: linear-gradient(90deg, #6f1901, #ba6b56);
+}
+.card-c-blue .card-icon,.card-c-brown .card-icon,.card-c-red .card-icon,.card-c-cyan .card-icon, .card-c-darkpink .card-icon, .card-c-orange .card-icon, .card-c-pink .card-icon, .card-c-green .card-icon{
+    background-color:none !important;
+    float: right !important;
+}
+.card-c-blue .card-title,.card-c-brown .card-title,.card-c-red .card-title,.card-c-cyan .card-title,.card-c-darkpink .card-title, .card-c-orange .card-title, .card-c-pink .card-title, .card-c-green .card-title{
+    color: #fff !important;
+}
+
+.card-c-orange{
+    background:linear-gradient(90deg, #f78a00, #ffa726);
+}
+
+.card-c-pink{
+    background:linear-gradient(90deg, #a916a4, #dc30d7);
+}
+
+.card-c-green{
+    background:linear-gradient(90deg, #3a863e, #66bb6a);
+}
+.card-c-darkpink {
+    background: linear-gradient(90deg, #c03b16, #e37354);
+}
+.card-c-cyan {
+    background: linear-gradient(90deg, #127e90, #27aec6);
+}
+.card-c-red {
+    background: linear-gradient(90deg, #ff3248, #ff586b);
+}
+.dataTables_length label{
+    display: inline-flex;
+}
+
+
+.dataTables_length label select{
+margin-top: -12px;
+    /*margin-legt: -9px;*/
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    }

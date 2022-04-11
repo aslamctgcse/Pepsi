@@ -1,0 +1,111 @@
+@extends('layouts.app1')
+
+@section('content')
+<?php //dd($products);?>
+<style>
+#collapseTwo{
+   height: :350px !important;
+   display:block !important;
+}
+/*.container-fluid{
+   display:none !important;
+}*/
+section.section-padding.footer.bg-white.border-top{
+   display:none !important;
+}
+nav.navbar.navbar-light.navbar-expand-lg.bg-faded.osahan-menu {
+    display: none !important;
+}
+</style>
+@if(session()->has('msg'))
+    <div class="alert alert-success" style="text-align:center">
+        {{ session()->get('msg') }}
+    </div>
+@endif
+    <div class="container">
+        <h2><a href="{{ route('products') }}" class="btn btn-success">Home Website</a></h2>
+        <h2><a href="{{ url('/orders') }}" class="btn btn-success">Orders</a></h2>
+        <!--added code for form beg--->
+        <div class="row addproduct">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <form method="post" action="{{url('/add-product')}}" enctype="multipart/form-data">
+                    {{csrf_field()}}
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Product Name:</label>
+                        <input type="text" name="productname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter product name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Price per Kg</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="price" name="productprice">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Product Image</label>
+                        <input type="file" class="form-control" name="productimage">
+                    </div>
+            
+                    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                    <input type="submit"  name="productsubmit" class="btn btn-primary"/>
+                </form>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    
+<section>
+    <div class="container">
+        <h2>Product List </h2>
+        <table class="table table-strip">
+            <tr>
+                <th>Product Name</th>
+                <th>Product Price (per Kg)</th>
+                <th>Product Image</th>
+                <th>Action</th>
+            </tr>
+            @foreach($productlist as $productlistValue)
+                <tr>
+                    <td>{{ $productlistValue->pname ?? '' }}</td>
+                    <td>{{ $productlistValue->pprice ?? '' }}</td>
+                    <td><img src="{{ url($productlistValue->pimage ?? '') }}" width="75px" height="75px"></td>
+                    <td><a href="{{ route('edit-product-form', [$productlistValue->id]) }}" class="btn btn-primary">Edit</a></td>
+                    <td><a href="{{ route('delete-product', [$productlistValue->id]) }}" class="btn btn-danger">Delete </a></td>
+                </tr>
+            @endforeach
+        </table>
+    </div>
+</section>
+
+<!--added code for form end--->
+
+<?php //include( 'footer.php') ?>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">-->
+<script>
+	
+ //        $(document).ready(function(){
+ // alert('hifdvfd');
+ //  });
+ function addtocart(pid){
+ 	var pidd=pid;
+ 	//alert(pidd);
+ 	$.ajax({
+
+          type: 'get',
+
+         // url: 'http://localhost/blog/public/addtocart',
+           url:"{{url('/addtocart')}}/"+pidd,
+
+          //data: {'pid':pidd},  
+
+          success : function(data){
+
+            // $('#category'+value).remove()
+
+             //console.log(data);
+             //alert(data);
+
+          }
+
+        });
+ }
+	</script>
+	@endsection

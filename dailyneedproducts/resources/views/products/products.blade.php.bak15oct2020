@@ -1,0 +1,129 @@
+@extends('layouts.app1')
+
+@section('content')
+<?php //dd($productlist);?>
+<section class="shop-list section-padding">
+	<div class="container">
+		<h5 class="mb-3">Dairy Products</h5>
+		<div class="row mb-3">
+			<!--<div class="col-md-3 col-sm-4 col-6 mb-3">
+				<div class="product p-2 azwarsalal">
+					<a href="#">
+						<div class="product-header">
+							<div class="product-body">
+								<h5>हार्वेस्ट ब्रेड</h5>
+								<h5>Harvest Bread az</h5>
+								<p class="offer-price mb-0">Discount of 3% on MRP <span></span>
+								</p>
+							</div>
+							<img class="img-fluid product-img" src="img/product/1.png" alt="">
+						</div>
+						<div class="product-footer text-center">
+							<button type="button" class="btn btn-secondary btn-sm"><i class="mdi mdi-cart-outline"></i> Add To Cart</button>
+						</div>
+					</a>
+				</div>
+			</div>-->
+			<!--added dynamic code for products beg-->
+			<!--added dynamic code for products beg-->
+			<?php 
+              foreach($productlist as $productlists){
+              	$productimage='img/logo.png';
+              	if(!empty($productlists->pimage)){
+              	$productimage=$productlists->pimage;
+              }
+             //  	echo '<pre>';
+             // print_r($row);
+             // die();
+			?>
+			<div class="col-md-3 col-sm-4 col-6 mb-3">
+				<div class="product p-2 azwar ">
+					<a href="javascript:void(0);">
+						<div class="product-header">
+							<div class="product-body">
+								<!-- <h5>हार्वेस्ट ब्रेड</h5> -->
+								<h5><?php echo $productlists->pname; ?></h5>
+								<p class="offer-price mb-0"> MRP <?php echo $productlists->pprice; ?> <span></span>
+								</p>
+							</div>
+							
+							<img class="img-fluid product-img" src="<?php  echo $productimage;?>" alt="">
+						</div>
+						<div class="product-footer text-center">
+							<button type="button" class="btn btn-secondary btn-sm" onclick="addtocart('<?php echo $productlists->id; ?>')"><i class="mdi mdi-cart-outline" ></i> Add To Cart</button>
+						</div>
+					</a>
+				</div>
+			</div>
+		<?php } ?>
+			<!--added dynamic code for products end-->
+			<!--added dynamic code for products end-->
+			
+
+	</div>
+</section>
+<section class="section-padding bg-white border-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-sm-6">
+				<div class="feature-box"> <i class="mdi mdi-truck-fast"></i>
+					<h6>Free & Next Day Delivery</h6>
+					<p>Lorem ipsum dolor sit amet, cons...</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="feature-box"> <i class="mdi mdi-basket"></i>
+					<h6>100% Satisfaction Guarantee</h6>
+					<p>Rorem Ipsum Dolor sit amet, cons...</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="feature-box"> <i class="mdi mdi-tag-heart"></i>
+					<h6>Great Daily Deals Discount</h6>
+					<p>Sorem Ipsum Dolor sit amet, Cons...</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">-->
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+	
+ //        $(document).ready(function(){
+ // alert('hifdvfd');
+ //  });
+ function addtocart(pid){
+ 	// var totalitems=$('.cart-value').text();
+ 	// var totalitems= parseInt(totalitems) + 1;
+ 	// $('.cart-value').text(totalitems);
+ 	var pidd=pid;
+ 	//alert(pidd);
+ 	$.ajax({
+
+          type: 'get',
+
+         // url: 'http://localhost/blog/public/addtocart',
+           url:"{{url('/addtocart')}}/"+pidd,
+
+          //data: {'pid':pidd},  
+
+          success : function(data){
+
+            // $('#category'+value).remove()
+
+             console.log(data);
+             //alert(data);
+
+             $('.cart-value').text(data);
+            // alert('Product has been added to cart');
+             swal('Product has been added to cart!');
+
+          }
+
+        });
+ }
+	</script>
+	@endsection

@@ -1,0 +1,436 @@
+.btn:focus{
+    box-shadow: none;
+}
+.page-link i {
+    font-size: 16px;
+}
+.input-group-text{
+    font-size: 14px;
+}
+.navbar-toggler-icon{
+    width: 20px;
+    height: 20px;
+}
+.input-group{
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%);
+}
+ #navbarText .navbar-nav{
+    display: block;
+
+}
+.btn-location{
+    /*min-width: 240px;*/
+    border: 1px solid transparent;
+    background: #fff;
+    padding: 0px 5px;
+    color: #220c02 !important;
+}
+.dropdown-toggle.btn-location::after{
+    display: none;
+}
+/*.btn-category{
+    width: 29%;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 10px;
+    height: 38px;
+    line-height: 38px;
+}*/
+/*.dropdown-menu.show {
+    display: block;
+    width: 100%;
+}*/
+.location-dropdown-menu{
+    width: 250px;
+    top: 80px;
+}
+.select2-container{
+    width: 100% !important;
+}
+.location-top .fa.fa-pencil {
+    font-size: 20px;
+}
+
+@media (max-width: 1400px) and (min-width: 1200px){
+    .top-category .owl-prev {
+        left: -50px;
+    }
+       .top-category .owl-next {
+        right: -50px;
+    }
+}
+
+
+@media only screen and (min-width:1200px) and (max-width:1920px){}
+
+
+@media only screen and (min-width:992px) and (max-width:1199px) {}
+
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .osahan-menu .my-2.my-lg-0 .main-nav-right{
+        display: none;
+    }
+   
+.w60-percent{
+    width: 60% !important;
+    
+}
+}
+
+
+@media only screen and (min-width:576px) and (max-width:767px) {
+    .osahan-menu .my-2.my-lg-0 .main-nav-right{
+        display: none;
+    }
+.footer{
+    padding-top: 20px;
+}
+}
+
+@media only screen and (min-width:320px) and (max-width:575px) {
+    .osahan-menu .my-2.my-lg-0 .main-nav-right{
+        display: none;
+    }
+.top-categories-search .btn{
+    padding:0 8px;
+    font-size: 0;
+}
+.top-categories-search .btn i{
+    font-size: 20px;
+}
+.category-offer{
+    font-size: 11px;
+}
+.category-name{
+    font-size: 11px !important;
+}
+.footer{
+    padding-top: 20px;
+}
+.shop-detail-right h2{
+    font-size: 18px;
+}
+.shop-detail-right .offer-price{
+    line-height: 20px;
+}
+.shop-detail-right .offer-price .text-success{
+    font-size: 18px;
+}
+.shop-detail-right > h6 {
+    margin: 0px 0 8px;
+}
+}
+
+.osahan-menu-2.left-0{
+    left: 0 !important;
+    box-shadow: 0 2px 4px 0 #2a2a2a;
+}
+li.welcome {
+    background: linear-gradient(125deg, rgb(34 12 2) 30%, rgb(58 16 1) 80%);
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+.category .card{
+    margin-bottom: 10px;
+}
+.btn-link.focus, .btn-link:focus, .btn-link.hover, .btn-link:hover{
+    text-decoration: none;
+}
+.category-offer {
+    color: #2d78bb;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.category-name {
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.category .card span.mdi{
+    font-size: 20px;
+    color: #2d78bb;
+}
+.max-width-100{
+    max-width: 100%;
+    width: 100px;
+    height: 70px;
+    box-shadow: 0 1px 3px 0 #a7a7a7;
+}
+#accordion .collapse .category-name{
+/*border-top: 2px solid #2d78bb;*/
+/*border-top: 2px solid #dbdfe2;*/
+width: auto;
+}
+#accordion .collapse img{
+    box-shadow: none;
+}
+.category .btn {
+    background: #fff;
+}
+
+/*overlay css*/
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+  cursor: pointer;
+}
+.login-bg{
+   /*background image indian keep acc to client*/
+    background-image: url(../1.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.product-header img.product-img{
+ height: 120px;
+ margin-top: 20px;
+}
+.quantity {
+    display: flex;
+    border: 1px solid;
+    width: 100px;
+    height: 30px;
+    margin-top: 0px;
+    margin-right: 4px;
+}
+.product .quantity {
+    margin-top: 0 !important;
+    margin-right: 4px !important;
+}
+.quantity span {
+    width: 34%;
+    height: 28px;
+}
+.quantity .input-group-btn {
+    width: 33px;
+    background: #f1f1f1;
+}
+.quantity .input-group-btn button{
+        padding: 0 10px;
+    font-size: 30px;
+    line-height: 0.8;
+}
+.quantity span input{
+        width: 100%;
+    height: 100%;
+    border: none;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    text-align: center;
+}
+#sync1 .item{
+    text-align: center;
+    height: 100%;
+    max-height: auto;
+    display: flex;
+    align-items: flex-start;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+#sync1 .item img{
+    margin: auto;
+    height: auto;
+    width: 100%;
+}
+.modal:nth-of-type(even) {
+    z-index: 1052 !important;
+}
+.modal-backdrop.show:nth-of-type(even) {
+    z-index: 1051 !important;
+}
+.color-theme {
+    color: #e96125;
+}
+.product-body.product-body-category{
+    background:linear-gradient(134deg, rgb(34 12 2) 35%, rgb(98 28 4) 100%) !important;
+}
+.product-body.product-body-category h5{
+    color: #fff !important;
+    font-size: 14px !important;
+}
+
+.product-body {
+    padding: 5px;
+    /*background: linear-gradient(134deg, rgb(0 101 201) 35%, rgb(57 146 216) 75%) !important;*/
+    color: #fff;
+    height: 50px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.product-body h5{
+    color: #000;
+    font-size: 18px;
+}
+.product-body h6 {
+    color: #e9e6e6;
+    font-size: 12px;
+    margin: 0;
+}
+section.product-items-slider.py-2 .card.px-5{
+        margin: 0 15px;
+    border-radius: 8px;
+    padding: 10px 0;
+}
+ .emptycartmsg{
+   font-size: 20px;
+    font-weight: bold;
+    width: 80%;
+    margin: auto;
+    height: 500px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    line-height: 40px;
+    text-align: center;
+}
+.stock{
+    min-height: 22px;
+}
+.stockbtn {
+    background: #ffffff none repeat scroll 0 0 !important;
+    border: 1px solid #451504 !important;
+    margin: 2px;
+    color: #220c02 !important;
+    font-weight: 700 !important;
+    height: 24px;
+    font-size: 14px;
+    min-width: 95px;
+}
+
+.select2-container *:focus {
+    border: 1px solid #2d78bb !important;
+    outline: 0;
+}
+
+.footer h6 {
+    color: #fff;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    background: linear-gradient(134deg, #220c02 35%, #87280a 100%) !important;
+    padding: 5px 0px;
+}
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff!important;
+    background-color: #551904 !important;
+    border-color: #551904 !important;
+}
+
+.page-link {
+    color: #551904 !important;
+}
+
+.osahan-menu-2::-webkit-scrollbar {
+    width: 3px;
+    background-color: #edac98 !important;
+}
+
+.osahan-menu-2::-webkit-scrollbar-thumb {
+    background-color: #edac98 !important;
+}
+
+.osahan-menu-2::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    background-color: #edac98 !important;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #521804;
+    border-color: #521804;
+}
+
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #220c02;
+    border-color: #220c02;
+}
+
+.new-bar-btn{
+    background: linear-gradient(125deg, #220c02 32%, #b43107 91%) !important;
+    border-color: none;
+    border: none;
+    border-radius: 0;
+    padding: 4px 6px;
+    margin: 30px auto;
+}
+.map-bar-btn{
+    border-color: none;
+    border: none;
+    border-radius: 0;
+    padding: 4px 6px;
+    margin: 26px auto;
+}
+.new-bar-btn i, .new-bar-btn span{
+    color: #fff !important;
+}
+button:focus {
+  outline: none;
+}
+.side-top-header{
+    background:linear-gradient(90deg, #eeac97, #cbc1be) ;
+}
+.pagination.justify-content-center .overflow-x-auto{
+    overflow-x: auto;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #0076f50f;
+    outline: 0;
+    box-shadow: 0 0 0 0.05rem rgb(0 0 0 / 13%) !important;
+}
+@media (max-width: 768px){
+    .mt-30{
+        margin-top: 30px !important;
+    }
+    .mb-30{
+        margin-bottom: 30px !important;
+    }
+    .t-center{
+        text-align: center;
+    }
+}
+.md-none .all-category{
+        margin-top: 30px;
+}
+
+/*.shop-detail-slider{
+    display: inline-grid;
+}*/
+
+.osahan-menu-2::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    background-color:#220c02 !important
+}
+
+.footer-logo{
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 50px;
+}

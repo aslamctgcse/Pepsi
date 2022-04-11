@@ -1,0 +1,410 @@
+.btn:focus{
+
+    box-shadow: none;
+
+}
+
+.page-link i {
+
+    font-size: 16px;
+
+}
+
+.input-group-text{
+
+    font-size: 14px;
+
+}
+
+.navbar-toggler-icon{
+
+    width: 20px;
+
+    height: 20px;
+
+}
+
+.input-group{
+
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 25%);
+
+}
+
+.btn-location{
+
+    /*min-width: 240px;*/
+
+    border: 1px solid transparent;
+
+    background: #fff;
+
+    padding: 0px 5px;
+
+    color: #2d78bb !important;
+
+}
+
+.dropdown-toggle.btn-location::after{
+
+    display: none;
+
+}
+
+.btn-category{
+
+    width: 29%;
+
+    text-transform: uppercase;
+
+    text-align: center;
+
+    padding: 0 10px;
+
+    height: 38px;
+
+    line-height: 38px;
+
+}
+
+/*.dropdown-menu.show {
+
+    display: block;
+
+    width: 100%;
+
+}*/
+
+.location-dropdown-menu{
+
+    width: 320px;
+
+    top: 65px;
+
+}
+
+.select2-container{
+
+    width: 100% !important;
+
+}
+
+.location-top .fa.fa-pencil {
+
+    font-size: 20px;
+
+}
+
+
+
+@media (max-width: 1400px) and (min-width: 1200px){
+
+    .top-category .owl-prev {
+
+    left: -50px;
+
+}
+
+   .top-category .owl-next {
+
+    right: -50px;
+
+}
+
+}
+
+
+
+
+
+@media only screen and (min-width:1200px) and (max-width:1920px){}
+
+
+
+
+
+@media only screen and (min-width:992px) and (max-width:1199px) {}
+
+
+
+
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+    .osahan-menu .my-2.my-lg-0 .main-nav-right{
+
+        display: none;
+
+    }
+
+    .top-categories-search {
+
+    margin-right: 0;
+
+    padding: 0;
+
+    position: relative;
+
+    top: -38px;
+
+    width: 70%;
+
+}
+
+.w60-percent{
+
+    width: 60% !important;
+
+    
+
+}
+
+}
+
+
+
+
+
+@media only screen and (min-width:576px) and (max-width:767px) {
+
+    .osahan-menu .my-2.my-lg-0 .main-nav-right{
+
+        display: none;
+
+    }
+
+    .top-categories-search {
+
+    margin-right: 0;
+
+    padding: 0;
+
+    position: relative;
+
+    top: -38px;
+
+    width: 70%;
+
+}
+
+.footer{
+
+    padding-top: 20px;
+
+}
+
+}
+
+
+
+@media only screen and (min-width:320px) and (max-width:575px) {
+
+    .osahan-menu .my-2.my-lg-0 .main-nav-right{
+
+        display: none;
+
+    }
+
+.top-categories-search .btn{
+
+    padding:0 8px;
+
+    font-size: 0;
+
+}
+
+.top-categories-search .btn i{
+
+    font-size: 20px;
+
+}
+
+.top-categories-search {
+
+    margin-right: 0;
+
+    padding: 0;
+
+    position: relative;
+
+    top: -38px;
+
+    width: 70%;
+
+}
+
+.category-offer{
+
+    font-size: 11px;
+
+}
+
+.category-name{
+
+    font-size: 11px !important;
+
+}
+
+.footer{
+
+    padding-top: 20px;
+
+}
+
+.shop-detail-right h2{
+
+    font-size: 18px;
+
+}
+
+.shop-detail-right .offer-price{
+
+    line-height: 20px;
+
+}
+
+.shop-detail-right .offer-price .text-success{
+
+    font-size: 18px;
+
+}
+
+.shop-detail-right > h6 {
+
+    margin: 0px 0 8px;
+
+}
+
+}
+
+
+
+.osahan-menu-2.left-0{
+
+    left: 0 !important;
+
+    box-shadow: 0 2px 4px 0 #2a2a2a;
+
+}
+
+li.welcome {
+
+    background: #2d78bb;
+
+    font-size: 16px;
+
+    text-align: center;
+
+    color: #fff;
+
+}
+
+.category .card{
+
+    margin-bottom: 10px;
+
+}
+
+.btn-link.focus, .btn-link:focus, .btn-link.hover, .btn-link:hover{
+
+    text-decoration: none;
+
+}
+
+.category-offer {
+
+    color: #2d78bb;
+
+    text-transform: uppercase;
+
+    font-weight: 600;
+
+    margin-bottom: 0;
+
+}
+
+.category-name {
+
+    margin-bottom: 0px;
+
+    text-transform: capitalize;
+
+    font-size: 14px;
+
+}
+
+.category .card span.mdi{
+
+    font-size: 20px;
+
+    color: #2d78bb;
+
+}
+
+.max-width-100{
+
+    max-width: 100px;
+
+    width: 100%;
+
+    box-shadow: 0 1px 3px 0 #a7a7a7;
+
+}
+
+.category .btn {
+
+    background: #fff;
+
+}
+
+
+
+/*overlay css*/
+
+
+
+#overlay {
+
+  position: fixed;
+
+  display: none;
+
+  width: 100%;
+
+  height: 100%;
+
+  top: 0;
+
+  left: 0;
+
+  right: 0;
+
+  bottom: 0;
+
+  background-color: rgba(0,0,0,0.5);
+
+  z-index: 1;
+
+  cursor: pointer;
+
+}
+
+.login-bg{
+
+    background-image: url(https://koraplatform.com/wp-content/uploads/2017/11/09-frugal-shoppers-special-sale-prices.jpg);
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    background-position: top center;
+
+}
+
+.product-header img.product-img{
+
+ height: 120px;
+
+ margin-top: 20px;
+
+}
+
